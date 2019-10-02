@@ -2,6 +2,6 @@
 
 echo "Hello! $1"
 echo "pwd: $(pwd)"
-head ./README.md
+echo "ls: $(ls -la)"
 time=$(date)
 echo ::set-output name=time::$time
