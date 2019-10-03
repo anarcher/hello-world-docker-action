@@ -6,7 +6,7 @@ jobs:
     steps:
     - name: checkout 
       uses: actions/checkout@v1
-    - name: skaffold help
+    - name: skaffold help build
       uses: anarcher/skaffold-action@master
       with:
-        skaffold: help
+        skaffold: help build
