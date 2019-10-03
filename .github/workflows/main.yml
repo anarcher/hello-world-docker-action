@@ -1,16 +1,12 @@
 on: [push]
 jobs:
-  hello_world_job:
+  skaffold:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: skaffold test
     steps:
-    - name: Check out code 
+    - name: checkout 
       uses: actions/checkout@v1
-    - name: Hello world action step
-      id: hello
-      uses: anarcher/hello-world-docker-action@anarcher-test-2
+    - name: skaffold help
+      uses: anarcher/skaffold-action@master
       with:
-        skaffold: run -l test
-    # Use the output from the `hello` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
+        skaffold: help
