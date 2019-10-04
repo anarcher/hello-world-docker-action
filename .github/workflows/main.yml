@@ -10,3 +10,4 @@ jobs:
       uses: anarcher/skaffold-action@master
       with:
         skaffold: help build
+    - runs: echo "${{ github.ref }}"
