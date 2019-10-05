@@ -10,4 +10,5 @@ jobs:
       uses: anarcher/skaffold-action@master
       with:
         skaffold: help build
+        kustomize: help
     - run: echo "${{ github.ref }}"
